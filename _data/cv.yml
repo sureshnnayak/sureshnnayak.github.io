@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: SUresh Narasimha Nayak
     - name: Date of Birth
-      value: 14th March 1879
+      value: 24th April 1996
     - name: Languages
-      value: English, German
+      value: English, Hindi, Kannada, Konkani, Tulu
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Masters in Computer Science
+      institution: University of Colorado Boulder. USA
+      year: 2023
       description:
         - Description 1.
         - Description 2.
@@ -21,9 +21,9 @@
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: Engineering
+      institution: R V College of Engineering, Bengaluru, India
+      year: 2018
       description:
         - Description 1.
         - Description 2.
@@ -31,9 +31,9 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Software Engineering Intern
+      institution: Cisco Systems
+      year: Jan 2018 - Aug 2018
       description:
         - Description 1.
         - Description 2.
