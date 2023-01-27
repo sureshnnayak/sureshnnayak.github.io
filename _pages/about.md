@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am a second year masters student at the university of colorado Boulder. I am a software developer having 3.5 years of industry experience.
-asaaaaaaaaaaaaa
+
 
 
 Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
