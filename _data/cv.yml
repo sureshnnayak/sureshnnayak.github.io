@@ -26,14 +26,13 @@
 
 
     - title: Graduate Teaching Assistant.
-    institution: University of Colorado Boulder
-    year: 2021-2023
-    description:
-        - 	Conducted recitation classes, interview grading, and held office hours for the course "Computer Systems" for a class of 379 students.
-    
+      institution: University of Colorado Boulder
+      year: 2021-2023
+      description:
+          - 	Conducted recitation classes, interview grading, and held office hours for the course "Computer Systems" for a class of 379 students.
+      
     - title: Software Engineering Intern
       institution: Cisco Systems
-  
       description:
         - Description 1.
         - Description 2.
