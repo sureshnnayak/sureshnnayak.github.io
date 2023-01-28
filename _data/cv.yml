@@ -23,6 +23,12 @@
 - title: Experience
   type: time_table
   contents:
+
+
+    - title: Graduate Teaching Assistant.
+      contents:
+        - 	Conducted recitation classes, interview grading, and held office hours for the course "Computer Systems" for a class of 379 students.
+    
     - title: Software Engineering Intern
       institution: Cisco Systems
   
