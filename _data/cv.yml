@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: SUresh Narasimha Nayak
-    - name: Date of Birth
-      value: 24th April 1996
     - name: Languages
       value: English, Hindi, Kannada, Konkani, Tulu
 
@@ -15,18 +13,12 @@
       institution: University of Colorado Boulder. USA
       year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Relevant course work: Linear Programming, Neural Networks and Deep Learning, Datacenter scale computing, Advanced Algorithms, Object-Oriented Analysis & Design, Distributed Systems.
+
     - title: Engineering
       institution: R V College of Engineering, Bengaluru, India
       year: 2018
-      description:
-        - Description 1.
-        - Description 2.
+
 
 - title: Experience
   type: time_table
