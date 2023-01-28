@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - sureshnnayak
+
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - sureshnnayak/Hand_track
+  - sureshnnayak/Train-yolo-on-SKU100k-Data-set
+  
