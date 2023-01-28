@@ -2,7 +2,9 @@
   type: map
   contents:
     - name: Full Name
-      value: Suresh Narasimha Nayak
+      value: SUresh Narasimha Nayak
+    - name: Date of Birth
+      value: 24th April 1996
     - name: Languages
       value: English, Hindi, Kannada, Konkani, Tulu
 
@@ -13,8 +15,12 @@
       institution: University of Colorado Boulder. USA
       year: 2023
       description:
-        - Relevant course work: Linear Programming, Neural Networks and Deep Learning, Datacenter scale computing, Advanced Algorithms, Object-Oriented Analysis & Design, Distributed Systems.
-
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
     - title: Engineering
       institution: R V College of Engineering, Bengaluru, India
       year: 2018
@@ -22,64 +28,70 @@
         - Description 1.
         - Description 2.
 
-
 - title: Experience
   type: time_table
   contents:
-    - title: Graduate Teaching Assistant.
-          contents:
-            - Conducted recitation classes, interview grading, and held office hours for the course "Computer Systems" for a class of 379 students.
-    
-    - title: Graduate research Assistant 
-      institution:  Collaborative Artificial Intelligence and Robotics Laboratory, University of colorado Boulder, US
-      year: 2022
-      description:
-        - •	Generated hand movement dataset using Opti-Track sensor and emulated the system on RealSense D435 Camera using Deep learning algorithms and set up the cross-platform data computing using Robotic operation system.
-        - •	Trained and unsedYOLOv5 Model on SKU110k Dataset to identify grocery items on the shelf with an accuracy of 93%.
-
-          
     - title: Software Engineering Intern
       institution: Cisco Systems
       year: Jan 2018 - Aug 2018
       description:
-        - •	Redesigned a software mechanism to monitor the liveness of process in Cisco XR routers and provide a means of recovering it whenever a critical process gets hung. Feature is currently deployed in the XR routers resulting in bug count by 10%.
-        - •	Devised a feature related to high availability components (in-memory database) during product release cycle efficiency reducing workload overhead by 80%.
-        - •	Developed a feature for Private line emulation (a Cisco patented project) to encapsulate other network packets in OTN packets. enabling customers to leverage existing infrastructure to connect to an OTN network with zero hardware cost.
-        - •	Migrated software components from GCC to Clang Compiler enforcing inter component tight coupling, helping team achieve bug count less than 10.
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Visiting Professor
+      institution: California Institute of Technology, Pasadena, California, US
+      year: 1933
+      description:
+        - Description 1.
+        - Description 2.
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Director
+      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+      year: 1917-1933
 
+    - title: Professor of Theoretical Physics
+      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+      year: 1911 - 1917
+      description:
 
+    - title: Associate Professor of Theoretical Physics
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1909 - 1911
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2020
+    - year: 1921
       items: 
-        - Connected recognition migrating infra components from GCC to clang compatible
-    - year: 2019
+        - Nobel Prize in Physics 
+        - Matteucci Medal
+    - year: 2029
       items: 
-        - Connected recognition for succesfull completing UT Automation for one of the Distribueted infa component
-    - year: 2018
-      items: 
-        - Finalists of the Student Unmanned Arial Systems, hosted by the AUVSI Seafarer Chapter
-
-
+        - Max Planck Medal
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Software Development
+    - title: Topic 1.
       items: 
-        - System Development, Nural Networkd, C, C++, Python
-
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> PLaying Piano, Hiking, Music, Gardening.
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
