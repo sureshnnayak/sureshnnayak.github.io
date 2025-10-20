@@ -3,7 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suresh Nayak - Software Engineer</title>
+    <title>Suresh Nayak - Software Engineer & Content Creator</title>
+    <meta name="description" content="Suresh Nayak - Software Engineer specializing in full-stack development, machine learning, and creating innovative solutions. Explore my projects, articles, and professional journey.">
+    <meta name="keywords" content="software engineer, full-stack developer, machine learning, Python, JavaScript, React, Node.js, portfolio, web development, AI, NLP">
+    <meta name="author" content="Suresh Nayak">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sureshnayak.github.io/portfolio/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sureshnayak.github.io/portfolio/">
+    <meta property="og:title" content="Suresh Nayak - Software Engineer & Content Creator">
+    <meta property="og:description" content="Software Engineer specializing in full-stack development, machine learning, and creating innovative solutions. Explore my projects, articles, and professional journey.">
+    <meta property="og:image" content="https://sureshnayak.github.io/portfolio/assets/images/profile-photo.svg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sureshnayak.github.io/portfolio/">
+    <meta property="twitter:title" content="Suresh Nayak - Software Engineer & Content Creator">
+    <meta property="twitter:description" content="Software Engineer specializing in full-stack development, machine learning, and creating innovative solutions.">
+    <meta property="twitter:image" content="https://sureshnayak.github.io/portfolio/assets/images/profile-photo.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+    
+    <!-- Performance optimizations -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preload" href="data/content.json" as="fetch" crossorigin>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/zero-md@2.4.0/dist/zero-md.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -119,7 +148,11 @@
                 <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
             </div>
             <div id="featured-projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projects will be loaded dynamically -->
+                <!-- Loading state -->
+                <div id="projects-loading" class="col-span-full flex justify-center items-center py-8">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                    <span class="ml-2 text-gray-600">Loading projects...</span>
+                </div>
             </div>
             <div class="text-center mt-8">
                 <a href="projects.html" class="text-blue-600 hover:text-blue-800 font-semibold">
@@ -137,7 +170,11 @@
                 <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
             </div>
             <div id="latest-articles" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Articles will be loaded dynamically -->
+                <!-- Loading state -->
+                <div id="articles-loading" class="col-span-full flex justify-center items-center py-8">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                    <span class="ml-2 text-gray-600">Loading articles...</span>
+                </div>
             </div>
             <div class="text-center mt-8">
                 <a href="articles.html" class="text-blue-600 hover:text-blue-800 font-semibold">
@@ -248,28 +285,74 @@
         async function loadFeaturedContent() {
             try {
                 const response = await fetch('data/content.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const data = await response.json();
                 
                 // Load featured projects
                 const featuredProjects = data.projects.filter(project => project.featured).slice(0, 3);
                 const projectsContainer = document.getElementById('featured-projects');
+                const projectsLoading = document.getElementById('projects-loading');
                 
-                featuredProjects.forEach(project => {
-                    const projectCard = createProjectCard(project);
-                    projectsContainer.appendChild(projectCard);
-                });
+                // Hide loading state
+                if (projectsLoading) {
+                    projectsLoading.remove();
+                }
+                
+                if (featuredProjects.length === 0) {
+                    projectsContainer.innerHTML = '<p class="text-gray-500 text-center col-span-full">No featured projects available.</p>';
+                } else {
+                    featuredProjects.forEach(project => {
+                        const projectCard = createProjectCard(project);
+                        projectsContainer.appendChild(projectCard);
+                    });
+                }
 
                 // Load latest articles
                 const latestArticles = data.articles.slice(0, 3);
                 const articlesContainer = document.getElementById('latest-articles');
+                const articlesLoading = document.getElementById('articles-loading');
                 
-                latestArticles.forEach(article => {
-                    const articleCard = createArticleCard(article);
-                    articlesContainer.appendChild(articleCard);
-                });
+                // Hide loading state
+                if (articlesLoading) {
+                    articlesLoading.remove();
+                }
+                
+                if (latestArticles.length === 0) {
+                    articlesContainer.innerHTML = '<p class="text-gray-500 text-center col-span-full">No articles available.</p>';
+                } else {
+                    latestArticles.forEach(article => {
+                        const articleCard = createArticleCard(article);
+                        articlesContainer.appendChild(articleCard);
+                    });
+                }
             } catch (error) {
                 console.error('Error loading content:', error);
+                showErrorMessage('Failed to load content. Please refresh the page or try again later.');
             }
+        }
+
+        function showErrorMessage(message) {
+            const projectsContainer = document.getElementById('featured-projects');
+            const articlesContainer = document.getElementById('latest-articles');
+            
+            const errorHTML = `
+                <div class="col-span-full text-center py-8">
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-2xl mb-2"></i>
+                        <p class="text-red-700 font-medium">${message}</p>
+                        <button onclick="location.reload()" class="mt-2 bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors">
+                            Retry
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            projectsContainer.innerHTML = errorHTML;
+            articlesContainer.innerHTML = errorHTML;
         }
 
         function createProjectCard(project) {

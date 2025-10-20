@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sureshnayak.github.io/portfolio/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
