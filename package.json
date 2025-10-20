@@ -1,0 +1,33 @@
+{
+  "name": "suresh-nayak-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Suresh Nayak - Software Engineer & Content Creator",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server .",
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:vercel": "vercel --prod",
+    "deploy:surge": "surge"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "software-engineer",
+    "blog",
+    "resume",
+    "projects"
+  ],
+  "author": "Suresh Nayak",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sureshnayak/portfolio-website.git"
+  },
+  "homepage": "https://sureshnayak.github.io/portfolio-website"
+}
