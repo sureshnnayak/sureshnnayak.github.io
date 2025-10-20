@@ -44,6 +44,17 @@
       "githubUrl": "#",
       "image": "assets/images/spectrum3.png",
       "date": "2023-11-01"
+    },
+    {
+      "id": 5,
+      "title": "Autonomous UAV System",
+      "description": "Developed UAV system for area surveying, object identification, and package delivery using computer vision and autonomous navigation.",
+      "technologies": ["C++", "OpenCV", "Computer Vision", "UAV", "Autonomous Systems"],
+      "featured": false,
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "image": "assets/images/uav-system.png",
+      "date": "2016-01-01"
     }
   ],
   "articles": [
@@ -91,17 +102,6 @@
       "tags": ["Broadcom", "Networking", "AI/ML", "Platform Integration", "C"],
       "featured": false,
       "file": "content/articles/broadcom-tomahawk5-platform-bringup.md"
-    },
-    {
-      "id": 5,
-      "title": "Autonomous UAV Systems: Computer Vision for Object Detection",
-      "excerpt": "Technical overview of developing autonomous UAV systems for area surveying and object identification using computer vision and OpenCV.",
-      "slug": "autonomous-uav-systems-computer-vision-object-detection",
-      "date": "2017-06-15",
-      "readTime": 12,
-      "tags": ["Computer Vision", "UAV", "OpenCV", "C++", "Autonomous Systems"],
-      "featured": false,
-      "file": "content/articles/autonomous-uav-systems-computer-vision.md"
     }
   ],
   "resume": {
