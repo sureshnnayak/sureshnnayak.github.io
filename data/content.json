@@ -2,110 +2,112 @@
   "projects": [
     {
       "id": 1,
-      "title": "News Summarizer",
-      "description": "AI-powered news summarization tool that processes articles and creates concise summaries for easy consumption.",
-      "technologies": ["Python", "Machine Learning", "NLP", "FastAPI", "React"],
+      "title": "ShelfHelp: Smart Cane for Visually Impaired",
+      "description": "AI-powered smart cane system that helps visually impaired people navigate grocery shopping using computer vision and MDP-based guidance.",
+      "technologies": ["Python", "Computer Vision", "Deep Learning", "ROS", "MDP"],
       "featured": true,
       "demoUrl": "#",
       "githubUrl": "#",
-      "image": "assets/images/news-summarizer.png",
-      "date": "2024-01-15"
+      "image": "assets/images/smart-cane.png",
+      "date": "2022-03-01",
+      "publication": "AAMAS 2023"
     },
     {
       "id": 2,
-      "title": "Personal Website",
-      "description": "A clean, responsive portfolio website built with vanilla HTML, CSS, and JavaScript for easy maintenance.",
-      "technologies": ["HTML", "CSS", "JavaScript", "TailwindCSS"],
+      "title": "ArcOS Infrastructure & Process Orchestration",
+      "description": "Led the adoption of systemd across all ArcOS platforms, replacing custom orchestrator to improve service reliability and security.",
+      "technologies": ["systemd", "Linux", "C", "Distributed Systems", "Containerization"],
       "featured": true,
       "demoUrl": "#",
       "githubUrl": "#",
-      "image": "assets/images/website.png",
-      "date": "2024-01-10"
+      "image": "assets/images/arcos-systemd.png",
+      "date": "2023-07-01"
     },
     {
       "id": 3,
-      "title": "Excalidraw Notes Manager",
-      "description": "A tool for organizing and managing Excalidraw diagrams with search and categorization features.",
-      "technologies": ["JavaScript", "Excalidraw API", "Local Storage"],
+      "title": "Broadcom Tomahawk 5 Platform Integration",
+      "description": "Successfully brought up key control-plane components including ACLs, QoS, and CoPP on Broadcom's Tomahawk 5 platform for AI/ML workloads.",
+      "technologies": ["C", "Linux", "Networking", "AI/ML", "Platform Integration"],
       "featured": true,
       "demoUrl": "#",
       "githubUrl": "#",
-      "image": "assets/images/excalidraw-manager.png",
-      "date": "2024-01-05"
+      "image": "assets/images/tomahawk5.png",
+      "date": "2023-09-01"
     },
     {
       "id": 4,
-      "title": "Task Management App",
-      "description": "A full-stack task management application with real-time updates and team collaboration features.",
-      "technologies": ["Node.js", "Express", "MongoDB", "Socket.io", "React"],
+      "title": "NVIDIA Spectrum-3 Platform Enablement",
+      "description": "Designed and implemented ArcOS platform integration layer for NVIDIA Spectrum-3, enabling seamless communication for high-throughput AI/ML workloads.",
+      "technologies": ["C", "NVIDIA SDK", "AI/ML", "Networking", "Platform Integration"],
       "featured": false,
       "demoUrl": "#",
       "githubUrl": "#",
-      "image": "assets/images/task-manager.png",
-      "date": "2023-12-20"
+      "image": "assets/images/spectrum3.png",
+      "date": "2023-11-01"
     }
   ],
   "articles": [
     {
       "id": 1,
-      "title": "Building a News Summarizer with Python and Machine Learning",
-      "excerpt": "Learn how to create an AI-powered news summarization tool using Python, NLP libraries, and machine learning techniques.",
-      "slug": "building-news-summarizer-python-ml",
-      "date": "2024-01-15",
-      "readTime": 8,
-      "tags": ["Python", "Machine Learning", "NLP", "Tutorial"],
+      "title": "ShelfHelp: Empowering Visually Impaired with AI-Assisted Shopping",
+      "excerpt": "Research paper on developing a socially assistive robotic system that helps visually impaired people navigate grocery shopping using computer vision and MDP-based guidance.",
+      "slug": "shelfhelp-ai-assisted-shopping-visually-impaired",
+      "date": "2022-10-29",
+      "readTime": 15,
+      "tags": ["Research", "AI", "Computer Vision", "Accessibility", "AAMAS"],
       "featured": true,
-      "file": "content/articles/building-news-summarizer-python-ml.md"
+      "file": "content/articles/shelfhelp-ai-assisted-shopping.md",
+      "publication": "AAMAS 2023"
     },
     {
       "id": 2,
-      "title": "Creating Excalidraw-Style Diagrams Programmatically",
-      "excerpt": "A comprehensive guide to generating and managing Excalidraw diagrams through code for better documentation workflows.",
-      "slug": "creating-excalidraw-diagrams-programmatically",
-      "date": "2024-01-10",
-      "readTime": 6,
-      "tags": ["JavaScript", "Excalidraw", "Documentation", "Automation"],
+      "title": "ArcOS Infrastructure: Migrating to systemd for Better Service Management",
+      "excerpt": "Technical deep-dive into migrating from custom process orchestrator to systemd for improved service reliability, isolation, and dependency management in network operating systems.",
+      "slug": "arcos-systemd-migration-process-orchestration",
+      "date": "2023-08-15",
+      "readTime": 12,
+      "tags": ["systemd", "Linux", "Infrastructure", "Distributed Systems", "C"],
       "featured": true,
-      "file": "content/articles/creating-excalidraw-diagrams-programmatically.md"
+      "file": "content/articles/arcos-systemd-migration.md"
     },
     {
       "id": 3,
-      "title": "The Future of Web Development: Trends and Predictions",
-      "excerpt": "Exploring emerging trends in web development and what developers should prepare for in the coming years.",
-      "slug": "future-web-development-trends-predictions",
-      "date": "2024-01-05",
-      "readTime": 5,
-      "tags": ["Web Development", "Trends", "Future", "Technology"],
+      "title": "AI/ML Networking: Enabling High-Throughput Workloads with NVIDIA Spectrum-3",
+      "excerpt": "Technical exploration of integrating AI/ML workloads with high-performance networking infrastructure, focusing on platform enablement and optimization strategies.",
+      "slug": "ai-ml-networking-nvidia-spectrum3-integration",
+      "date": "2023-11-20",
+      "readTime": 10,
+      "tags": ["AI/ML", "Networking", "NVIDIA", "High-Performance Computing", "Platform Integration"],
       "featured": true,
-      "file": "content/articles/future-web-development-trends-predictions.md"
+      "file": "content/articles/ai-ml-networking-nvidia-spectrum3.md"
     },
     {
       "id": 4,
-      "title": "Building Responsive Websites with TailwindCSS",
-      "excerpt": "A practical guide to creating beautiful, responsive websites using TailwindCSS utility classes.",
-      "slug": "building-responsive-websites-tailwindcss",
-      "date": "2023-12-28",
-      "readTime": 7,
-      "tags": ["CSS", "TailwindCSS", "Responsive Design", "Tutorial"],
+      "title": "Broadcom Tomahawk 5: Platform Bring-up for AI/ML Workloads",
+      "excerpt": "Deep dive into bringing up control-plane components on Broadcom's Tomahawk 5 platform, including ACLs, QoS, and CoPP for AI/ML networking applications.",
+      "slug": "broadcom-tomahawk5-platform-bringup-ai-ml",
+      "date": "2023-09-10",
+      "readTime": 8,
+      "tags": ["Broadcom", "Networking", "AI/ML", "Platform Integration", "C"],
       "featured": false,
-      "file": "content/articles/building-responsive-websites-tailwindcss.md"
+      "file": "content/articles/broadcom-tomahawk5-platform-bringup.md"
     },
     {
       "id": 5,
-      "title": "Getting Started with Machine Learning in Python",
-      "excerpt": "An introduction to machine learning concepts and practical implementation using Python libraries.",
-      "slug": "getting-started-machine-learning-python",
-      "date": "2023-12-15",
-      "readTime": 10,
-      "tags": ["Python", "Machine Learning", "Tutorial", "Beginner"],
+      "title": "Autonomous UAV Systems: Computer Vision for Object Detection",
+      "excerpt": "Technical overview of developing autonomous UAV systems for area surveying and object identification using computer vision and OpenCV.",
+      "slug": "autonomous-uav-systems-computer-vision-object-detection",
+      "date": "2017-06-15",
+      "readTime": 12,
+      "tags": ["Computer Vision", "UAV", "OpenCV", "C++", "Autonomous Systems"],
       "featured": false,
-      "file": "content/articles/getting-started-machine-learning-python.md"
+      "file": "content/articles/autonomous-uav-systems-computer-vision.md"
     }
   ],
   "resume": {
-    "title": "Suresh Nayak - Software Engineer Resume",
+    "title": "Suresh N Nayak - Senior Software Engineer Resume",
     "file": "assets/documents/resume.pdf",
-    "lastUpdated": "2024-01-15"
+    "lastUpdated": "2024-01-20"
   },
   "youtube": {
     "channelUrl": "#",

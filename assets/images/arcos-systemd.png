@@ -1,0 +1,97 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="systemdGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="serviceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  
+  <!-- ArcOS Logo/System -->
+  <circle cx="200" cy="150" r="80" fill="url(#systemdGradient)" opacity="0.1"/>
+  <text x="200" y="155" text-anchor="middle" fill="#1D4ED8" font-size="24" font-family="Arial" font-weight="bold">ArcOS</text>
+  
+  <!-- systemd Services -->
+  <g>
+    <!-- Core Service -->
+    <rect x="120" y="80" width="60" height="40" fill="url(#serviceGradient)" rx="4"/>
+    <text x="150" y="100" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Core</text>
+    <text x="150" y="115" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Service</text>
+    
+    <!-- Network Service -->
+    <rect x="220" y="80" width="60" height="40" fill="url(#serviceGradient)" rx="4"/>
+    <text x="250" y="100" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Network</text>
+    <text x="250" y="115" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Service</text>
+    
+    <!-- Config Service -->
+    <rect x="120" y="140" width="60" height="40" fill="url(#serviceGradient)" rx="4"/>
+    <text x="150" y="160" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Config</text>
+    <text x="150" y="175" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Service</text>
+    
+    <!-- Database Service -->
+    <rect x="220" y="140" width="60" height="40" fill="url(#serviceGradient)" rx="4"/>
+    <text x="250" y="160" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Database</text>
+    <text x="250" y="175" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Service</text>
+    
+    <!-- API Service -->
+    <rect x="120" y="200" width="60" height="40" fill="url(#serviceGradient)" rx="4"/>
+    <text x="150" y="220" text-anchor="middle" fill="white" font-size="10" font-family="Arial">API</text>
+    <text x="150" y="235" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Service</text>
+    
+    <!-- Monitor Service -->
+    <rect x="220" y="200" width="60" height="40" fill="url(#serviceGradient)" rx="4"/>
+    <text x="250" y="220" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Monitor</text>
+    <text x="250" y="235" text-anchor="middle" fill="white" font-size="8" font-family="Arial">Service</text>
+  </g>
+  
+  <!-- Dependency Arrows -->
+  <g stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)">
+    <!-- Core to Network -->
+    <line x1="180" y1="100" x2="220" y2="100"/>
+    <!-- Core to Config -->
+    <line x1="150" y1="120" x2="150" y2="140"/>
+    <!-- Network to Database -->
+    <line x1="250" y1="120" x2="250" y2="140"/>
+    <!-- Config to API -->
+    <line x1="150" y1="180" x2="150" y2="200"/>
+    <!-- Database to Monitor -->
+    <line x1="250" y1="180" x2="250" y2="200"/>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6B7280"/>
+    </marker>
+  </defs>
+  
+  <!-- systemd Logo -->
+  <g transform="translate(320, 50)">
+    <circle cx="20" cy="20" r="15" fill="url(#systemdGradient)"/>
+    <text x="20" y="25" text-anchor="middle" fill="white" font-size="12" font-family="Arial" font-weight="bold">s</text>
+  </g>
+  
+  <!-- Security Features -->
+  <g opacity="0.7">
+    <rect x="50" y="50" width="40" height="30" fill="none" stroke="#EF4444" stroke-width="2" rx="4"/>
+    <text x="70" y="65" text-anchor="middle" fill="#EF4444" font-size="8" font-family="Arial">Security</text>
+    <text x="70" y="75" text-anchor="middle" fill="#EF4444" font-size="8" font-family="Arial">Hardening</text>
+  </g>
+  
+  <!-- Resource Management -->
+  <g opacity="0.7">
+    <rect x="310" y="200" width="40" height="30" fill="none" stroke="#F59E0B" stroke-width="2" rx="4"/>
+    <text x="330" y="215" text-anchor="middle" fill="#F59E0B" font-size="8" font-family="Arial">Resource</text>
+    <text x="330" y="225" text-anchor="middle" fill="#F59E0B" font-size="8" font-family="Arial">Limits</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#1F2937" font-size="16" font-family="Arial" font-weight="bold">ArcOS systemd Migration</text>
+  <text x="200" y="290" text-anchor="middle" fill="#6B7280" font-size="12" font-family="Arial">Distributed Infrastructure & Process Orchestration</text>
+</svg>
