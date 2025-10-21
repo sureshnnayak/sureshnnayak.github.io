@@ -66,6 +66,18 @@
       "githubUrl": "#",
       "image": "assets/images/uav-system.png",
       "date": "2016-01-01"
+    },
+    {
+      "id": 7,
+      "title": "Product Detection Using Neural Networks",
+      "description": "Trained YOLOv5 model on SKU110K dataset to create a product detection system that can identify all products on retail shelves with high accuracy.",
+      "technologies": ["YOLOv5", "Python", "Computer Vision", "Deep Learning", "Object Detection", "PyTorch"],
+      "featured": true,
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "image": "assets/images/yolov5-product-detection.png",
+      "date": "2023-10-01",
+      "dataset": "SKU110K"
     }
   ],
   "articles": [
@@ -129,6 +141,19 @@
       "featured": true,
       "published": true,
       "file": "content/articles/automating-firmware-upgrades-arcos.md"
+    },
+    {
+      "id": 6,
+      "title": "Product Detection Using Neural Networks: YOLOv5 on SKU110K",
+      "excerpt": "Comprehensive guide to training YOLOv5 model on SKU110K dataset for retail product detection, achieving 84.7% mAP@0.5 on densely packed shelf scenarios.",
+      "slug": "yolov5-product-detection-sku110k-neural-networks",
+      "date": "2023-10-01",
+      "readTime": 15,
+      "tags": ["YOLOv5", "Computer Vision", "Deep Learning", "Object Detection", "Retail AI", "PyTorch"],
+      "featured": true,
+      "published": true,
+      "file": "content/articles/yolov5-product-detection-sku110k.md",
+      "dataset": "SKU110K"
     }
   ],
   "resume": {

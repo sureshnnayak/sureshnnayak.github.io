@@ -1,0 +1,70 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shelfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Shelf Structure -->
+  <rect x="50" y="80" width="300" height="20" fill="#8B4513" rx="2"/>
+  <rect x="50" y="100" width="300" height="120" fill="url(#shelfGradient)" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Product Boxes (Before Detection) -->
+  <rect x="70" y="110" width="40" height="30" fill="#ff6b6b" rx="3"/>
+  <rect x="120" y="110" width="40" height="30" fill="#4ecdc4" rx="3"/>
+  <rect x="170" y="110" width="40" height="30" fill="#45b7d1" rx="3"/>
+  <rect x="220" y="110" width="40" height="30" fill="#96ceb4" rx="3"/>
+  <rect x="270" y="110" width="40" height="30" fill="#feca57" rx="3"/>
+  
+  <rect x="70" y="150" width="40" height="30" fill="#ff9ff3" rx="3"/>
+  <rect x="120" y="150" width="40" height="30" fill="#54a0ff" rx="3"/>
+  <rect x="170" y="150" width="40" height="30" fill="#5f27cd" rx="3"/>
+  <rect x="220" y="150" width="40" height="30" fill="#00d2d3" rx="3"/>
+  <rect x="270" y="150" width="40" height="30" fill="#ff9f43" rx="3"/>
+  
+  <rect x="70" y="190" width="40" height="30" fill="#ff6348" rx="3"/>
+  <rect x="120" y="190" width="40" height="30" fill="#2ed573" rx="3"/>
+  <rect x="170" y="190" width="40" height="30" fill="#1e90ff" rx="3"/>
+  <rect x="220" y="190" width="40" height="30" fill="#ffa502" rx="3"/>
+  <rect x="270" y="190" width="40" height="30" fill="#ff3838" rx="3"/>
+  
+  <!-- Detection Bounding Boxes (Overlay) -->
+  <rect x="68" y="108" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="118" y="108" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="168" y="108" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="218" y="108" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="268" y="108" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <rect x="68" y="148" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="118" y="148" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="168" y="148" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="218" y="148" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="268" y="148" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <rect x="68" y="188" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="118" y="188" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="168" y="188" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="218" y="188" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  <rect x="268" y="188" width="44" height="34" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- YOLOv5 Logo/Text -->
+  <text x="200" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">YOLOv5</text>
+  <text x="200" y="70" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14">Product Detection</text>
+  
+  <!-- Dataset Info -->
+  <text x="200" y="250" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12">SKU110K Dataset</text>
+  <text x="200" y="265" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">11,762 images • 1.7M+ bounding boxes</text>
+  
+  <!-- Detection Confidence -->
+  <text x="320" y="120" fill="#00ff00" font-family="Arial, sans-serif" font-size="10" font-weight="bold">0.95</text>
+  <text x="320" y="160" fill="#00ff00" font-family="Arial, sans-serif" font-size="10" font-weight="bold">0.92</text>
+  <text x="320" y="200" fill="#00ff00" font-family="Arial, sans-serif" font-size="10" font-weight="bold">0.88</text>
+</svg>
