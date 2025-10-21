@@ -78,6 +78,7 @@
       "readTime": 15,
       "tags": ["Research", "AI", "Computer Vision", "Accessibility", "AAMAS"],
       "featured": true,
+      "published": true,
       "file": "content/articles/shelfhelp-ai-assisted-shopping.md",
       "publication": "AAMAS 2023"
     },
@@ -90,6 +91,7 @@
       "readTime": 12,
       "tags": ["systemd", "Linux", "Infrastructure", "Distributed Systems", "C"],
       "featured": true,
+      "published": true,
       "file": "content/articles/arcos-systemd-migration.md"
     },
     {
@@ -101,6 +103,7 @@
       "readTime": 10,
       "tags": ["AI/ML", "Networking", "NVIDIA", "High-Performance Computing", "Platform Integration"],
       "featured": true,
+      "published": true,
       "file": "content/articles/ai-ml-networking-nvidia-spectrum3.md"
     },
     {
@@ -112,6 +115,7 @@
       "readTime": 8,
       "tags": ["Broadcom", "Networking", "AI/ML", "Platform Integration", "C"],
       "featured": false,
+      "published": false,
       "file": "content/articles/broadcom-tomahawk5-platform-bringup.md"
     },
     {
@@ -123,6 +127,7 @@
       "readTime": 12,
       "tags": ["ArcOS", "Automation", "Firmware Management", "CLI", "Linux", "C", "Python"],
       "featured": true,
+      "published": true,
       "file": "content/articles/automating-firmware-upgrades-arcos.md"
     }
   ],
@@ -140,12 +145,6 @@
         "description": "A walkthrough of my news summarization tool and its features.",
         "videoId": "demo-video-1",
         "thumbnail": "assets/images/youtube-thumb-1.jpg"
-      },
-      {
-        "title": "Building a Portfolio Website",
-        "description": "Step-by-step guide to creating a personal portfolio website.",
-        "videoId": "demo-video-2",
-        "thumbnail": "assets/images/youtube-thumb-2.jpg"
       }
     ]
   }

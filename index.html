@@ -324,8 +324,9 @@
                     });
                 }
 
-                // Load latest articles
-                const latestArticles = data.articles.slice(0, 3);
+                // Load latest published articles
+                const publishedArticles = data.articles.filter(article => article.published !== false);
+                const latestArticles = publishedArticles.slice(0, 3);
                 const articlesContainer = document.getElementById('latest-articles');
                 const articlesLoading = document.getElementById('articles-loading');
                 

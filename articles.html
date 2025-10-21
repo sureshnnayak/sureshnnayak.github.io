@@ -182,7 +182,8 @@
             try {
                 const response = await fetch('data/content.json');
                 const data = await response.json();
-                allArticles = data.articles;
+                // Filter only published articles
+                allArticles = data.articles.filter(article => article.published !== false);
                 filteredArticles = [...allArticles];
                 renderArticles();
             } catch (error) {
