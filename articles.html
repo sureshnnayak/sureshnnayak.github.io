@@ -93,7 +93,10 @@
                     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                 </div>
                 <div class="flex flex-wrap gap-2">
-                    <button class="filter-btn active bg-blue-600 text-white px-4 py-2 rounded-lg font-medium" data-filter="all">
+                    <button class="filter-btn active bg-blue-600 text-white px-4 py-2 rounded-lg font-medium" data-filter="featured">
+                        Featured
+                    </button>
+                    <button class="filter-btn bg-white text-gray-700 px-4 py-2 rounded-lg font-medium border" data-filter="all">
                         All Articles
                     </button>
                     <button class="filter-btn bg-white text-gray-700 px-4 py-2 rounded-lg font-medium border" data-filter="tutorial">
@@ -184,7 +187,8 @@
                 const data = await response.json();
                 // Filter only published articles
                 allArticles = data.articles.filter(article => article.published !== false);
-                filteredArticles = [...allArticles];
+                // Show only featured articles by default
+                filteredArticles = allArticles.filter(article => article.featured === true);
                 renderArticles();
             } catch (error) {
                 console.error('Error loading articles:', error);
@@ -285,6 +289,7 @@
                                     article.tags.some(tag => tag.toLowerCase().includes(searchTerm));
                 
                 const matchesFilter = activeFilter === 'all' || 
+                                   (activeFilter === 'featured' && article.featured === true) ||
                                    (activeFilter === 'tutorial' && article.tags.some(tag => 
                                        ['tutorial', 'guide', 'how-to'].includes(tag.toLowerCase()))) ||
                                    (activeFilter === 'ml' && article.tags.some(tag => 
