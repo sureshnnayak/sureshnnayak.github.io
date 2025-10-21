@@ -1,0 +1,88 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="firmwareGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="automationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#F8FAFC"/>
+  
+  <!-- ArcOS Logo/System -->
+  <circle cx="200" cy="150" r="80" fill="url(#firmwareGradient)" opacity="0.1"/>
+  <text x="200" y="155" text-anchor="middle" fill="#1D4ED8" font-size="24" font-family="Arial" font-weight="bold">ArcOS</text>
+  
+  <!-- CLI Interface -->
+  <g>
+    <rect x="50" y="50" width="120" height="80" fill="url(#automationGradient)" rx="4"/>
+    <text x="110" y="75" text-anchor="middle" fill="white" font-size="12" font-family="Arial" font-weight="bold">CLI Interface</text>
+    <text x="110" y="95" text-anchor="middle" fill="white" font-size="10" font-family="Arial">arcos firmware</text>
+    <text x="110" y="110" text-anchor="middle" fill="white" font-size="10" font-family="Arial">upgrade --image</text>
+    <text x="110" y="125" text-anchor="middle" fill="white" font-size="10" font-family="Arial">--schedule</text>
+  </g>
+  
+  <!-- Multi-ODM Support -->
+  <g>
+    <rect x="230" y="50" width="120" height="80" fill="url(#automationGradient)" rx="4"/>
+    <text x="290" y="75" text-anchor="middle" fill="white" font-size="12" font-family="Arial" font-weight="bold">Multi-ODM</text>
+    <text x="290" y="95" text-anchor="middle" fill="white" font-size="10" font-family="Arial">UfiSpace</text>
+    <text x="290" y="110" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Edgecore</text>
+    <text x="290" y="125" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Delta</text>
+  </g>
+  
+  <!-- Persistent Scheduling -->
+  <g>
+    <rect x="50" y="150" width="120" height="80" fill="url(#automationGradient)" rx="4"/>
+    <text x="110" y="175" text-anchor="middle" fill="white" font-size="12" font-family="Arial" font-weight="bold">Scheduling</text>
+    <text x="110" y="195" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Linux at</text>
+    <text x="110" y="210" text-anchor="middle" fill="white" font-size="10" font-family="Arial">command</text>
+    <text x="110" y="225" text-anchor="middle" fill="white" font-size="10" font-family="Arial">persistent</text>
+  </g>
+  
+  <!-- Validation System -->
+  <g>
+    <rect x="230" y="150" width="120" height="80" fill="url(#automationGradient)" rx="4"/>
+    <text x="290" y="175" text-anchor="middle" fill="white" font-size="12" font-family="Arial" font-weight="bold">Validation</text>
+    <text x="290" y="195" text-anchor="middle" fill="white" font-size="10" font-family="Arial">Pre/Post</text>
+    <text x="290" y="210" text-anchor="middle" fill="white" font-size="10" font-family="Arial">checks</text>
+    <text x="290" y="225" text-anchor="middle" fill="white" font-size="10" font-family="Arial">automated</text>
+  </g>
+  
+  <!-- Data Flow Arrows -->
+  <g stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arrowhead)">
+    <line x1="170" y1="90" x2="200" y2="120"/>
+    <line x1="230" y1="90" x2="200" y2="120"/>
+    <line x1="170" y1="190" x2="200" y2="150"/>
+    <line x1="230" y1="190" x2="200" y2="150"/>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- EFI Bootloader -->
+  <g opacity="0.7">
+    <rect x="50" y="250" width="80" height="30" fill="none" stroke="#F59E0B" stroke-width="2" rx="4"/>
+    <text x="90" y="265" text-anchor="middle" fill="#F59E0B" font-size="8" font-family="Arial">EFI Bootloader</text>
+    <text x="90" y="275" text-anchor="middle" fill="#F59E0B" font-size="8" font-family="Arial">Management</text>
+  </g>
+  
+  <!-- Syslog Integration -->
+  <g opacity="0.7">
+    <rect x="270" y="250" width="80" height="30" fill="none" stroke="#3B82F6" stroke-width="2" rx="4"/>
+    <text x="310" y="265" text-anchor="middle" fill="#3B82F6" font-size="8" font-family="Arial">Syslog</text>
+    <text x="310" y="275" text-anchor="middle" fill="#3B82F6" font-size="8" font-family="Arial">Integration</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="#1F2937" font-size="16" font-family="Arial" font-weight="bold">Firmware Upgrade Automation</text>
+  <text x="200" y="290" text-anchor="middle" fill="#6B7280" font-size="12" font-family="Arial">ArcOS Multi-Platform Automation Framework</text>
+</svg>

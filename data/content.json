@@ -47,6 +47,17 @@
     },
     {
       "id": 5,
+      "title": "Automating Firmware Upgrades Across Platforms in ArcOS",
+      "description": "Developed an end-to-end firmware upgrade automation framework for ArcOS that eliminates manual intervention, ensures reliability, and supports multiple ODM hardware platforms.",
+      "technologies": ["C", "Python", "Linux", "CLI", "Automation", "Firmware Management"],
+      "featured": true,
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "image": "assets/images/firmware-automation.png",
+      "date": "2024-06-01"
+    },
+    {
+      "id": 6,
       "title": "Autonomous UAV System",
       "description": "Developed UAV system for area surveying, object identification, and package delivery using computer vision and autonomous navigation.",
       "technologies": ["C++", "OpenCV", "Computer Vision", "UAV", "Autonomous Systems"],
@@ -102,12 +113,23 @@
       "tags": ["Broadcom", "Networking", "AI/ML", "Platform Integration", "C"],
       "featured": false,
       "file": "content/articles/broadcom-tomahawk5-platform-bringup.md"
+    },
+    {
+      "id": 5,
+      "title": "Automating Firmware Upgrades Across Platforms in ArcOS",
+      "excerpt": "Technical deep-dive into developing an end-to-end firmware upgrade automation framework for ArcOS, including CLI-driven orchestration, multi-ODM support, and persistent scheduling.",
+      "slug": "automating-firmware-upgrades-arcos-platforms",
+      "date": "2024-06-15",
+      "readTime": 12,
+      "tags": ["ArcOS", "Automation", "Firmware Management", "CLI", "Linux", "C", "Python"],
+      "featured": true,
+      "file": "content/articles/automating-firmware-upgrades-arcos.md"
     }
   ],
   "resume": {
     "title": "Suresh N Nayak - Senior Software Engineer Resume",
     "file": "assets/documents/resume.pdf",
-    "lastUpdated": "2024-01-20"
+    "lastUpdated": "2025-01-20"
   },
   "youtube": {
     "channelUrl": "#",
