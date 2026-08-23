@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reader - Suresh N Nayak</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/zero-md@2.4.0/dist/zero-md.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
     <style>
@@ -300,17 +300,16 @@
         async function loadMarkdownContent(content) {
             try {
                 const response = await fetch(content.file);
+                if (!response.ok) throw new Error(`Fetch failed: ${response.status}`);
                 const markdown = await response.text();
-                
-                // Use zero-md to render markdown
+
                 const markdownContainer = document.getElementById('markdown-content');
-                markdownContainer.innerHTML = `<zero-md src="${content.file}"></zero-md>`;
-                
-                // Generate table of contents
+                markdownContainer.innerHTML = marked.parse(markdown);
+
                 generateTOC();
             } catch (error) {
                 console.error('Error loading markdown:', error);
-                document.getElementById('markdown-content').innerHTML = 
+                document.getElementById('markdown-content').innerHTML =
                     '<p class="text-red-600">Error loading content. Please try again later.</p>';
             }
         }
@@ -343,10 +342,31 @@
         }
 
         function generateTOC() {
-            // This is a simplified TOC generation
-            // In a real implementation, you'd parse the markdown headings
             const tocContent = document.getElementById('toc-content');
-            tocContent.innerHTML = '<p class="text-gray-500 text-sm">Table of contents will be generated automatically from the article headings.</p>';
+            const headings = document.querySelectorAll('#markdown-content h2, #markdown-content h3');
+
+            if (headings.length === 0) {
+                tocContent.innerHTML = '<p class="text-gray-500 text-sm">No sections in this article.</p>';
+                return;
+            }
+
+            const list = document.createElement('ul');
+            headings.forEach((heading, index) => {
+                const id = `heading-${index}`;
+                heading.id = id;
+
+                const item = document.createElement('li');
+                item.className = heading.tagName === 'H3' ? 'ml-3' : '';
+
+                const link = document.createElement('a');
+                link.href = `#${id}`;
+                link.textContent = heading.textContent;
+                item.appendChild(link);
+                list.appendChild(item);
+            });
+
+            tocContent.innerHTML = '';
+            tocContent.appendChild(list);
         }
 
         // Load content when page loads
